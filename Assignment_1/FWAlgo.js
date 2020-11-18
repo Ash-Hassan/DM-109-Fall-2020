@@ -68,9 +68,9 @@ function FwAlgo(){
     
    //Output to be displayed on Html Page 
     divOutput.textContent+="\n[";
-    for (var i=0;i<4;i++){
+    for (var i=0;i<size;i++){
       divOutput.textContent+="\n[";
-      for (var j=0;j<4;j++){
+      for (var j=0;j<size;j++){
         divOutput.textContent+=output[i][j];
         divOutput.textContent+=",";
       }
