@@ -20,7 +20,9 @@ First we need to convert the input from textarea and type of string to a matirx,
 After that the algorithm is implemented and output is shown by js .innerhtml.
 
 ## Issues Faced ##
-In Javascript we cannot directly declare 2d array :(  The Solution was to make a single temparray and assign to another single array which makes it a 2d array.
+In Javascript we cannot directly declare 2d array :(  
+**Solution:**
+The Solution was to make a single temparray and assign to another single array which makes it a 2d array.
 
 ## Refrence ##
 https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
