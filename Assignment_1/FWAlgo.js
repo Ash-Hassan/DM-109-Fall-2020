@@ -36,48 +36,37 @@ function FwAlgo(){
     }
     console.log("Now Function Output: ")
     //Here Starts The Algorithm
-     var dist = [];
       var size = matrix.length;
-      for (var i = 0; i < size; i += 1) {
-        dist[i] = [];
-        for (var j = 0; j < size; j += 1) {
-          if (i === j) {
-            dist[i][j] = 0;
-          } else if (!isFinite(matrix[i][j])) {
-            dist[i][j] = Infinity;
-          } else {
-            dist[i][j] = matrix[i][j];
-          }
-        }
-      }
-      var size = matrix.length;
-      for (var k = 0; k < size; k += 1) {
-        for (var i = 0; i < size; i += 1) {
-          for (var j = 0; j < size; j += 1) {
-            if (dist[i][j] > dist[i][k] + dist[k][j]) {
-              dist[i][j] = dist[i][k] + dist[k][j];
+      var output= matrix;
+       console.log(output);
+      for (var k = 0; k < size; ++k) {
+        for (var i = 0; i < size; ++i) {
+          for (var j = 0; j < size; ++j) {
+            output[i][j] = ( output[i][j] || ( output[i][k] && output[k][j] ) );
             }
           }
+        if (k==size-1){
+          display(output);}
         }
-      }
       //Sorting the Output
-    var output= dist;
+    
 
-    console.log(output);
     
-    
+}
+    function display(output){
+      var size = output.length;
    //Output to be displayed on Html Page 
-    divOutput.textContent+="\n[";
+    divOutput.innerHTML+="[";
     for (var i=0;i<size;i++){
-      divOutput.textContent+="\n[";
+      divOutput.innerHTML+="[";
       for (var j=0;j<size;j++){
-        divOutput.textContent+=output[i][j];
-        divOutput.textContent+=",";
+        divOutput.innerHTML+=output[i][j];
+        divOutput.innerHTML+=",";
       }
-      divOutput.textContent+="]\n";
+      divOutput.innerHTML+="]";
     }
-    divOutput.textContent+="]\n";
+    divOutput.innerHTML+="]<br>";
 	//Mention reference where you got the solution
-	//Ref: https://www.geeksforgeeks.org/floyd-warshall-algorithm-dp-16/
+	//Ref: http://www.codezclub.com/c-find-path-matrix-warshalls-algorithm/
 	//Ref: https://stackoverflow.com/questions/14512251/convert-string-into-2d-int-array
 }//end sol1
