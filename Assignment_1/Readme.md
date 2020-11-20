@@ -8,11 +8,10 @@ StdID | Name
 <!-- Replace name and student ids with acutally group member names and ids-->
 
 ## Description ##
-This repository contains The Floyd Warshall Algorithm That is imlemented on html and Js, It is live on
+This repository contains The Warshall Algorithm That is imlemented on html and Js, It is live on
 http://dmproject.byethost7.com/
 
-The Floyd Warshall Algorithm is for solving the All Pairs Shortest Path problem. 
-The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph.
+Warshall's algorithm is an efficient method of finding the adjacency matrix of the transitive closure of relation R on a finite set S from the adjacency matrix of R
 
 ## Approach ##
 First we need to convert the input from textarea and type of string to a matirx, Then i Converted that Matrix to an Int Matrix.
