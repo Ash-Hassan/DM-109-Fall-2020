@@ -18,7 +18,10 @@ After implementing the phase 1 and making the algo run multiple times the only t
 graph was fairly easy to implement as there was two list and just needed to append the values whereas the rest of the work was done by the plotly library.
 
 ## Issues Faced ##
-Not familliar with js.
+- Cannont declare 2d array directly.
+- Very little information available on internet.
+- line break in html was not working with \n.
+- Not familliar with js.
 
 ## Refrence ##
 - http://www.codezclub.com/c-find-path-matrix-warshalls-algorithm/
